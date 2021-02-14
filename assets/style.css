@@ -40,6 +40,7 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  /* text-align: center; */
 }
 
 .card-header::after {
@@ -52,6 +53,27 @@ header {
 
 .card-body {
   min-height: 100px;
+}
+
+/* added these lines to make GUI look better */
+.select {
+  display: flex;
+  justify-content: center;  
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+/* this one is stopping the box for lenght to grow bigger hence making it look better */
+#character {
+  margin-left: 10px;
+  width: 40px;
+}
+
+/* this line adds margin to left side of the checkboxes to look better*/
+input[type=checkbox] {
+  margin-left: 8px;
 }
 
 .card-footer {
