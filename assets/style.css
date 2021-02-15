@@ -68,7 +68,7 @@ header {
 /* this one is stopping the box for lenght to grow bigger hence making it look better */
 #character {
   margin-left: 10px;
-  width: 40px;
+  width: 3rem;
 }
 
 /* this line adds margin to left side of the checkboxes to look better*/
