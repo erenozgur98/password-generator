@@ -16,8 +16,11 @@ var symbols = "!@#$%^&*(){}[]_=<>/,;:'|/?".split("");
 // Write password to the #password input
 function generatePassword() {
   
+  // the + before passLenghtEl.value is making the value a number, same as parseInt
   var passwordLength = +passLenghtEl.value;
   var selectedCharacters = [];
+
+  // the if statements for checking if the checkboxes are checked or not as well as prompting with the correct rules if has not been chosen
   if (!upperEl.checked && !lowerEl.checked && !numbersEl.checked && !symbolsEl.checked) {
     alert("You need to select at least one of the below");
     return;
@@ -38,6 +41,7 @@ function generatePassword() {
   return newPassword;
 }
 
+// generating the password text via collecting all the information through generatePassword() function
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
